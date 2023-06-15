@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Hotel Golden Palace </title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+		}
+		header {
+			background-color: #245;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		}
+		section {
+			padding: 50px;
+			text-align: center;
+		}
+		button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: background-color 0.5s;
+		}
+		button:hover {
+			background-color: #350;
+		}
+         
+		footer {
+			background-color: #f2f2f2;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+      
+	<header>
+		<h1>Hotel Golden Palace</h1>
+	</header>
+	<section>
+		<h2>What We Offer</h2>
+		<p>Welcome to my restrarunt. </p>
+		<button>Learn More</button>
+	</section>
+	<footer>
+		<p>Copyright © 2023 My Company</p>
+	</footer>
+</body>
+</html>
