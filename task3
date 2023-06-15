@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Temperature Converter</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<script>
+function convertTemp() {
+	var temp = parseFloat(document.getElementById("temp").value);
+	var unit = document.getElementById("unit").value;
+	var result = document.getElementById("result");
+
+	if (isNaN(temp)) {
+		result.innerHTML = "Please enter a valid temperature";
+		return;
+	}
+
+	switch(unit) {
+		case "celsius":
+			var fahrenheit = temp * 1.8 + 32;
+			var kelvin = temp + 273.15;
+			result.innerHTML = temp + " Celsius = " + fahrenheit.toFixed
+</script>
+<style>
+body {
+	font-family: Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin: 20px 0;
+}
+
+label {
+	margin-right: 10px;
+}
+
+input[type="text"] {
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+select {
+	margin-left: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+}
+
+input[type="button"] {
+	margin-left: 10px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+#result {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+</style>
+
+<body>
+	<h1>Temperature Converter</h1>
+	<form>
+		<label for="temp">Temperature:</label>
+		<input type="text" id="temp" name="temp">
+		<select id="unit">
+			<option value="celsius">Celsius</option>
+			<option value="fahrenheit">Fahrenheit</option>
+			<option value="kelvin">Kelvin</option>
+		</select>
+		<input type="button" value="Convert" onclick="convertTemp()">
+	</form>
+	<div id="result"></div>
+	<script src="script.js"></script>
+</body>
+</html>
